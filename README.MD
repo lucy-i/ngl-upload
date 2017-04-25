@@ -69,5 +69,5 @@ $ npm run lint
 
 ## License
 
-MIT © [ramkumar.murugarasan@hotmail.com](mailto:ramkumar.murugarasan@hotmail.com)
+MIT © [lucy@ilucy.in](mailto:lucy@ilucy.in)
 "# ngl-upload" 
