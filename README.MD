@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { NGLFileUploadModule } from 'ngl-upload';
+import { NGLUploadModule } from 'ngl-upload';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { NGLFileUploadModule } from 'ngl-upload';
     BrowserModule,
 
     // Specify your library as an import
-    NGLFileUploadModule
+    NGLUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
