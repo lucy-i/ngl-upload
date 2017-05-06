@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ngl-upload';
+import { NGLFileUploadModule } from 'ngl-upload';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'ngl-upload';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    NGLFileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -47,10 +47,7 @@ Once your library is imported, you can use its components, directives and pipes 
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<ngl-upload></ngl-upload>
 ```
 
 ## Development
@@ -70,4 +67,4 @@ $ npm run lint
 ## License
 
 MIT © [lucy@ilucy.in](mailto:lucy@ilucy.in)
-"# ngl-upload" 
+"#ngl-upload" 

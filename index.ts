@@ -1,35 +1,36 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SampleComponent } from './src/sample.component';
-import { SampleDirective } from './src/sample.directive';
-import { SamplePipe } from './src/sample.pipe';
-import { SampleService } from './src/sample.service';
 
-export * from './src/sample.component';
-export * from './src/sample.directive';
-export * from './src/sample.pipe';
-export * from './src/sample.service';
+import { NGLUploadDirective } from "./src/nglupload.directive";
+import { NGLUploadComponent } from "./src/nglupload.component";
+import { NGLUploadPipe } from "./src/nglupload.pipe";
+import { NGLUploadService } from "./src/nglupload.service";
+
+export * from "./src/nglupload.directive";
+export * from "./src/nglupload.component";
+export * from "./src/nglupload.pipe";
+export * from "./src/nglupload.service";
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    NGLUploadComponent,
+    NGLUploadDirective,
+    NGLUploadPipe
   ],
   exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
+    NGLUploadComponent,
+    NGLUploadDirective,
+    NGLUploadPipe
   ]
 })
-export class SampleModule {
+export class NGLUploadModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: SampleModule,
-      providers: [SampleService]
+      ngModule: NGLUploadModule,
+      providers: [NGLUploadService]
     };
   }
 }
